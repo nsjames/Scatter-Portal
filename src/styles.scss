@@ -1,0 +1,29 @@
+@import './scss/variables';
+
+html,
+body,
+figure,
+section,
+div,
+a,
+span,
+p,
+nav,
+article,
+input,
+textarea{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  font-family: 'Raleway', sans-serif;
+}
+
+.limit-width {
+  max-width:1366px;
+  margin:0 auto;
+  padding:0 100px;
+}

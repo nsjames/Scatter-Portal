@@ -45,6 +45,11 @@
     text-align:left;
     width:calc(100% - 362px);
     float:left;
+
+    @media (max-width:1060px){
+      width:100%;
+      height:500px;
+    }
   }
 
   .info {
@@ -61,6 +66,10 @@
       max-width:500px;
       width:100%;
       font-weight:200;
+
+      @media (max-width:1060px){
+        max-width:100%;
+      }
     }
 
     .cta {
@@ -94,6 +103,10 @@
     text-align: right;
     position:relative;
     margin-top:120px;
+
+    @media (max-width:1060px){
+      display:none;
+    }
 
     .icon {
       width:24px;
@@ -170,6 +183,10 @@
 main {
   margin-top:100px;
 
+  @media (max-width:1060px){
+    margin-top:0;
+  }
+
   h1 {
     font-size:34px;
     font-weight: 300;
@@ -218,7 +235,10 @@ main {
 
       &.on-left {
         max-width:335px;
-        margin-right:50px;
+        padding:0;
+      }
+
+      &.no-padding {
         padding:0;
       }
     }
@@ -228,6 +248,18 @@ main {
       float:left;
       padding:0 45px 0 0;
       text-align: left;
+
+      &.on-right {
+        padding:0 0 0 45px;
+      }
+    }
+
+    @media (max-width:1060px){
+      .half, .third, .two-thirds {
+        width:100%;
+        margin-bottom:50px;
+        padding:0 !important;
+      }
     }
   }
 
@@ -348,5 +380,12 @@ main {
     }
   }
 
+
+  .hide-mobile {
+
+    @media (max-width:1060px){
+      display:none;
+    }
+  }
 
 }

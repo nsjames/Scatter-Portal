@@ -363,6 +363,15 @@ main {
       margin-top:20px;
     }
 
+    .icon-logo {
+      display:inline-block;
+      margin:0 10px;
+
+      img {
+        height:40px;
+      }
+    }
+
     .button {
       cursor: pointer;
       height:50px;

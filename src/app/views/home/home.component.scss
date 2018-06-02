@@ -85,9 +85,13 @@
       display: inline-block;
       padding:0 20px;
       border-radius: 4px;
-      margin-top:40px;
       transition: all 0.1s ease;
       transition-property: background,color;
+      margin-top:10px;
+
+      &:first-child{
+        margin-top:40px;
+      }
 
       &.small {
         height:30px;
